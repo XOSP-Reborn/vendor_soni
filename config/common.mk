@@ -201,4 +201,7 @@ $(call inherit-product, vendor/gapps/config.mk)
 # RRO Overlays
 $(call inherit-product, vendor/xosp/config/rro_overlays.mk)
 
+# Xperia stuffs
+$(call inherit-product, vendor/xperia/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
