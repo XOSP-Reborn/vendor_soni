@@ -198,9 +198,6 @@ $(call inherit-product, vendor/xosp/config/fonts.mk)
 # GApps
 $(call inherit-product, vendor/gapps/config.mk)
 
-# OTA
-$(call inherit-product, vendor/xosp/config/ota.mk)
-
 # RRO Overlays
 $(call inherit-product, vendor/xosp/config/rro_overlays.mk)
 
