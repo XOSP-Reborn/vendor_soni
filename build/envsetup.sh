@@ -81,7 +81,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch aosp_$target-$variant
+            lunch xosp_$target-$variant
         fi
     fi
     return $?
@@ -862,7 +862,7 @@ alias cmkap='dopush cmka'
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/aosp/build/tools/repopick.py $@
+    $T/vendor/xosp/build/tools/repopick.py $@
 }
 
 function fixup_common_out_dir() {

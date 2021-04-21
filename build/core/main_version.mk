@@ -30,14 +30,14 @@ CUSTOM_BUILD_DATE := $(CUSTOM_DATE_YEAR)$(CUSTOM_DATE_MONTH)$(CUSTOM_DATE_DAY)-$
 
 CUSTOM_PLATFORM_VERSION := 11.0
 
-TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
+TARGET_PRODUCT_SHORT := $(subst xosp_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := PixelExperience_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
+CUSTOM_VERSION := XOSP_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := eleven
 
 ADDITIONAL_BUILD_PROPERTIES += \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE)
+    ro.xosp.version=$(CUSTOM_VERSION_PROP) \
+    ro.xosp.version.display=$(CUSTOM_VERSION) \
+    ro.xosp.build_date=$(CUSTOM_BUILD_DATE) \
+    ro.xosp.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    ro.xosp.build_type=$(CUSTOM_BUILD_TYPE)

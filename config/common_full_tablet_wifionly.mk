@@ -1,2 +1,2 @@
-# Inherit full common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full.mk)
+# Inherit full common XOSP stuff
+$(call inherit-product, vendor/xosp/config/common_full.mk)
