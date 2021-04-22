@@ -23,7 +23,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.setupwizard.rotation_locked=true
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
-# Disable ADB authentication
+TARGET_DEBUG_ENABLE ?= true
+endif 
+
+ifeq ($(TARGET_DEBUG_ENABLE),true)
+# Disable ADB authenication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 else
 # Enable ADB authentication
