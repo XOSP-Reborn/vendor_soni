@@ -51,14 +51,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# Enforce privapp-permissions only if specified
-ifeq ($(TARGET_ENFORCE_PERMS),true)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=enforce
-else
+# Don't Enforce privapp-permissions only if specified
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
-endif
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
