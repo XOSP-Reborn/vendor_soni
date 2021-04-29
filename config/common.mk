@@ -193,9 +193,6 @@ endif
 # Audio
 $(call inherit-product, vendor/xosp/config/audio.mk)
 
-# Bootanimation
-$(call inherit-product, vendor/xosp/config/bootanimation.mk)
-
 # Fonts
 $(call inherit-product, vendor/xosp/config/fonts.mk)
 
@@ -207,5 +204,8 @@ $(call inherit-product, vendor/xosp/config/rro_overlays.mk)
 
 # Xperia stuffs
 $(call inherit-product, vendor/xperia/config.mk)
+
+# Boot animation
+$(call inherit-product, vendor/xosp/bootanimation/config.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
