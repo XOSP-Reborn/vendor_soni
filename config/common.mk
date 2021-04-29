@@ -200,9 +200,7 @@ $(call inherit-product, vendor/xosp/config/bootanimation.mk)
 $(call inherit-product, vendor/xosp/config/fonts.mk)
 
 # GApps
-ifeq ($(TARGET_INCLUDE_GAPPS),true)
 $(call inherit-product, vendor/gapps/config.mk)
-endif 
 
 # RRO Overlays
 $(call inherit-product, vendor/xosp/config/rro_overlays.mk)
