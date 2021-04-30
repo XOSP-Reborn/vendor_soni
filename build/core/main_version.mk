@@ -30,14 +30,14 @@ CUSTOM_BUILD_DATE := $(CUSTOM_DATE_YEAR)$(CUSTOM_DATE_MONTH)$(CUSTOM_DATE_DAY)-$
 
 CUSTOM_PLATFORM_VERSION := 11.0
 
-TARGET_PRODUCT_SHORT := $(subst xosp_,,$(CUSTOM_BUILD))
+TARGET_PRODUCT_SHORT := $(subst soni_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := XOSP_$(CUSTOM_BUILD)-$(CUSTOM_VERSION_PROP)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
+CUSTOM_VERSION := SoniUI_$(CUSTOM_BUILD)-$(CUSTOM_VERSION_PROP)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := Zero
 
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.xosp.version=$(CUSTOM_VERSION_PROP) \
-    ro.xosp.version.display=$(CUSTOM_VERSION) \
-    ro.xosp.build_date=$(CUSTOM_BUILD_DATE) \
-    ro.xosp.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    ro.xosp.build_type=$(CUSTOM_BUILD_TYPE)
+    ro.soni.version=$(CUSTOM_VERSION_PROP) \
+    ro.soni.version.display=$(CUSTOM_VERSION) \
+    ro.soni.build_date=$(CUSTOM_BUILD_DATE) \
+    ro.soni.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    ro.soni.build_type=$(CUSTOM_BUILD_TYPE)

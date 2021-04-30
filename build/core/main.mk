@@ -1,1 +1,1 @@
-include $(TOPDIR)vendor/xosp/build/core/main_version.mk
+include $(TOPDIR)vendor/soni/build/core/main_version.mk

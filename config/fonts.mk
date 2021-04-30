@@ -60,4 +60,4 @@ PRODUCT_PACKAGES += \
     Barlow-Medium.ttf
 
 PRODUCT_COPY_FILES += \
-    vendor/xosp/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+    vendor/soni/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml

@@ -1,4 +1,4 @@
-# Inherit common XOSP stuff
-$(call inherit-product, vendor/xosp/config/common.mk)
+# Inherit common SoniUI stuff
+$(call inherit-product, vendor/soni/config/common.mk)
 
 PRODUCT_SIZE := full
