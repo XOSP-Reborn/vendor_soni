@@ -63,4 +63,8 @@
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
+
+    <!-- Set Recent task provider -->
+    <string name="config_recentsComponentName">com.sonymobile.launcher/com.android.quickstep.RecentsActivity</string>
+
 </resources>
