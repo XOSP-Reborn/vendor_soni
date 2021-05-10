@@ -195,7 +195,7 @@ PRODUCT_PACKAGES += \
     XperiaHome
 
 # Audio
-$(call inherit-product, vendor/soni/config/audio.mk)
+$(call inherit-product, vendor/soni/audio/config.mk)
 
 # Fonts
 $(call inherit-product, vendor/soni/config/fonts.mk)
